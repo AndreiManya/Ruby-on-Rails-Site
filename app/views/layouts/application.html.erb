@@ -17,27 +17,37 @@
   
 
   <header>
-    <div class="main">
-      <ul>
-        <li><%= link_to 'Home', root_url, class:'link' %></li>
+    <nav>
+      <div class="nav-link">
+        <ul>
+          <li><%= link_to 'Home', root_url, class:'link' %></li>
 
-        <li><a href="#" class="link">About us</a></li>
-        <li><a href="#" class="link">Contact</a></li>
-        <li><%= link_to 'Login', new_user_session_path, class:'link' %></li> 
-      </ul> 
-    </div>
+          <li><a href="#" class="link">About us</a></li>
+          <li><a href="#" class="link">Contact</a></li>
+          <li><%= link_to 'Login', new_user_session_path, class:'link' %></li> 
+          <li><%= link_to('Logout', destroy_user_session_path, method: :delete) %>  </li> 
+        </ul> 
+      </div>
+    </nav>
+
+
+     <main>
+       
+     <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <%= yield %> 
+          </div>
+        </div>
+      </div>
+    </main> 
+    
   </header> 
 
 
 
   <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <%= yield %> 
-      </div>
-    </div>
-  </div>
+
 
   <!-- COntainer -->
   <!--<style>body{padding-top:70px;}</style>-->
