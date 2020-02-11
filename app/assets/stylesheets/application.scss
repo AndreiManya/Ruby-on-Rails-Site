@@ -30,7 +30,8 @@ header {
 ul {
   
  
-  margin:30px 540px;
+  margin-top:15px;
+  text-align:center;
   
 
   li {
@@ -102,4 +103,13 @@ ul {
 label {
 margin-top:20px;
 font-size: 15;
+}
+
+
+
+
+
+.col-centred{
+margin: 0 auto;
+float:none;
 }
