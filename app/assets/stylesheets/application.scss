@@ -105,12 +105,14 @@ margin-top:20px;
 font-size: 15;
 }
 
-
-
-
-
 .col-centred{
 margin: 0 auto;
 float:none;
+}
+
+#error_explanation ul{
+  border: 1px solid red;
+li {display:block;
+  }
 }
 
