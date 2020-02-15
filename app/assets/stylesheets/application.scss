@@ -63,8 +63,7 @@ ul {
 /** Login **/
 
 
-
-* {
+body {
   color: #fff;
 }
 
@@ -98,7 +97,7 @@ ul {
 
 
 .foot {
-  margin-top:150px;
+  margin-top:100px;
 }
 label {
 margin-top:20px;
@@ -116,3 +115,31 @@ li {display:block;
   }
 }
 
+/*flash*/
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-success {
+    text-align: left;
+    color: #155724; 
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+ }
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }

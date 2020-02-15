@@ -20,9 +20,6 @@
     <nav>
       <div class="nav-link">
         <ul>
-          <li><%= link_to 'Home', root_url, class:'link' %></li>
-          <li><a href="#" class="link">About us</a></li>
-          <li><a href="#" class="link">Contact</a></li> 
           <%= render 'users/menu/login_items' %>
         </ul> 
       </div>
@@ -34,6 +31,7 @@
      <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
+            <%= render 'layouts/messages' %>
             <%= yield %> 
           </div>
         </div>
